@@ -6,10 +6,10 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>اوین هوم | فروشگاه لوازم خانگی</title>
+<title>لوازم خانگی بهنام اطلس | مشهد</title>
 
 
-<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;700;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;600;800;900&display=swap" rel="stylesheet">
 
 
 <style>
@@ -24,48 +24,54 @@ font-family:Vazirmatn;
 
 body{
 
-background:#faf7f1;
+background:#f8f5ef;
 color:#222;
+
 }
 
 
 html{
+
 scroll-behavior:smooth;
+
 }
+
 
 
 header{
 
+height:90px;
+background:white;
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:0 8%;
+box-shadow:0 5px 25px rgba(0,0,0,.08);
 position:sticky;
 top:0;
 z-index:100;
-background:white;
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:20px 8%;
-box-shadow:0 5px 20px #0001;
+
 
 }
 
 
 .logo{
 
-font-size:32px;
+font-size:30px;
 font-weight:900;
-color:#8b5a2b;
+color:#9b6b35;
 
 }
 
 
-.logo span{
+.logo small{
 
 display:block;
 font-size:12px;
 color:#777;
-font-weight:400;
 
 }
+
 
 
 nav a{
@@ -78,15 +84,18 @@ font-weight:600;
 }
 
 
-.header-btn{
 
-background:#8b5a2b;
+.call-btn{
+
+background:#9b6b35;
 color:white;
-padding:12px 25px;
-border-radius:30px;
+padding:13px 28px;
+border-radius:40px;
 text-decoration:none;
 
 }
+
+
 
 
 
@@ -96,11 +105,11 @@ text-decoration:none;
 
 .hero{
 
-min-height:90vh;
 display:flex;
 align-items:center;
-gap:50px;
-padding:70px 8%;
+gap:60px;
+padding:80px 8%;
+min-height:90vh;
 
 }
 
@@ -114,7 +123,7 @@ flex:1;
 
 .hero-text h1{
 
-font-size:55px;
+font-size:58px;
 line-height:1.5;
 
 }
@@ -122,45 +131,49 @@ line-height:1.5;
 
 .hero-text h1 span{
 
-color:#b87b42;
+color:#b9854b;
 
 }
+
 
 
 .hero-text p{
 
 font-size:18px;
-line-height:2;
-margin:25px 0;
+line-height:2.2;
 color:#555;
+margin:25px 0;
 
 }
 
 
-.hero-buttons a{
+
+.buttons a{
 
 display:inline-block;
-padding:15px 30px;
-border-radius:30px;
-background:#8b5a2b;
+padding:16px 35px;
+background:#9b6b35;
 color:white;
+border-radius:40px;
 text-decoration:none;
 margin-left:10px;
 
 }
 
 
-.hero-buttons .second{
+.buttons .light{
 
 background:white;
-color:#8b5a2b;
-border:2px solid #8b5a2b;
+border:2px solid #9b6b35;
+color:#9b6b35;
 
 }
 
 
 
-.hero-image{
+
+
+.hero-img{
 
 flex:1;
 position:relative;
@@ -168,31 +181,32 @@ position:relative;
 }
 
 
-.hero-image img{
+.hero-img img{
 
 width:100%;
-height:500px;
+height:520px;
 object-fit:cover;
-border-radius:35px;
-box-shadow:0 20px 50px #0003;
+border-radius:40px;
+
+box-shadow:
+0 25px 60px rgba(0,0,0,.25);
 
 }
 
 
-.tag{
+
+.store-tag{
 
 position:absolute;
-bottom:25px;
-right:25px;
+bottom:30px;
+right:30px;
 background:white;
-padding:18px 25px;
-border-radius:20px;
+padding:20px 30px;
+border-radius:25px;
 box-shadow:0 10px 30px #0002;
 font-weight:bold;
 
 }
-
-
 
 
 
@@ -205,17 +219,20 @@ padding:80px 8%;
 }
 
 
+
 .title{
 
+font-size:40px;
 text-align:center;
-font-size:38px;
 margin-bottom:50px;
 
 }
 
 
 
-/* categories */
+
+
+/* category */
 
 
 .categories{
@@ -227,31 +244,35 @@ gap:25px;
 }
 
 
-.category{
+
+.card{
 
 background:white;
 padding:35px 20px;
-border-radius:25px;
+border-radius:30px;
 text-align:center;
-box-shadow:0 10px 30px #0001;
+box-shadow:0 15px 35px #0001;
 transition:.3s;
 
 }
 
 
-.category:hover{
+
+.card:hover{
 
 transform:translateY(-10px);
 
 }
 
 
+
 .icon{
 
-font-size:45px;
+font-size:50px;
 margin-bottom:20px;
 
 }
+
 
 
 
@@ -262,46 +283,54 @@ margin-bottom:20px;
 
 .products{
 
-background:#fff;
+background:white;
 
 }
 
 
 
-.product-box{
+.product-grid{
 
 display:grid;
 grid-template-columns:repeat(3,1fr);
 gap:30px;
 
 }
+
 
 
 .product{
 
-background:#faf7f1;
+background:#f8f5ef;
 padding:25px;
-border-radius:25px;
-text-align:center;
+border-radius:30px;
 
 }
 
 
-.product-demo{
 
-height:180px;
-border-radius:20px;
+.fake-img{
+
+height:200px;
+
 background:
-linear-gradient(135deg,#eee,#d8c5ae);
+
+linear-gradient(
+135deg,
+#e9dfd0,
+#c9aa7d
+);
+
+border-radius:25px;
 
 display:flex;
-align-items:center;
 justify-content:center;
+align-items:center;
+
 font-size:28px;
-font-weight:bold;
+font-weight:800;
 color:#765;
 
-margin-bottom:20px;
 
 }
 
@@ -309,11 +338,10 @@ margin-bottom:20px;
 
 
 
+/* features */
 
-/* advantage */
 
-
-.advantages{
+.features{
 
 display:grid;
 grid-template-columns:repeat(3,1fr);
@@ -322,13 +350,13 @@ gap:30px;
 }
 
 
-.adv{
+
+.feature{
 
 background:white;
-padding:35px;
-border-radius:25px;
+padding:40px;
+border-radius:30px;
 text-align:center;
-box-shadow:0 10px 30px #0001;
 
 }
 
@@ -337,34 +365,40 @@ box-shadow:0 10px 30px #0001;
 
 
 
-/* CTA */
+/* banner */
 
 
-.cta{
+.banner{
 
 margin:0 8%;
-background:#8b5a2b;
+background:#9b6b35;
 color:white;
-border-radius:35px;
+
+border-radius:40px;
+
+padding:55px;
+
 display:flex;
 justify-content:space-between;
 align-items:center;
-padding:50px;
+
 
 }
 
 
-.cta a{
+
+.banner a{
 
 background:white;
-color:#8b5a2b;
-padding:15px 30px;
-border-radius:30px;
+color:#9b6b35;
+
+padding:15px 35px;
+
+border-radius:40px;
+
 text-decoration:none;
 
 }
-
-
 
 
 
@@ -377,10 +411,11 @@ text-align:center;
 }
 
 
+
 .contact p{
 
-line-height:2.3;
 font-size:18px;
+line-height:2.5;
 
 }
 
@@ -388,16 +423,21 @@ font-size:18px;
 
 .contact button{
 
-margin-top:25px;
-background:#8b5a2b;
+background:#9b6b35;
+border:0;
 color:white;
-border:none;
-padding:15px 40px;
-border-radius:30px;
+
+padding:16px 45px;
+
+border-radius:40px;
+
+font-size:18px;
+
 cursor:pointer;
-font-size:17px;
 
 }
+
+
 
 
 
@@ -405,10 +445,13 @@ footer{
 
 background:#222;
 color:white;
-padding:30px;
+
 text-align:center;
 
+padding:30px;
+
 }
+
 
 
 
@@ -421,7 +464,8 @@ text-align:center;
 header{
 
 flex-direction:column;
-gap:20px;
+height:auto;
+padding:20px;
 
 }
 
@@ -433,7 +477,6 @@ display:none;
 }
 
 
-
 .hero{
 
 flex-direction:column;
@@ -443,22 +486,22 @@ flex-direction:column;
 
 .hero-text h1{
 
-font-size:35px;
+font-size:38px;
 
 }
 
 
-
 .categories,
-.product-box,
-.advantages{
+.product-grid,
+.features{
 
 grid-template-columns:1fr;
 
 }
 
 
-.cta{
+
+.banner{
 
 flex-direction:column;
 gap:30px;
@@ -466,7 +509,10 @@ text-align:center;
 
 }
 
+
 }
+
+
 
 </style>
 
@@ -474,7 +520,9 @@ text-align:center;
 </head>
 
 
+
 <body>
+
 
 
 
@@ -483,13 +531,14 @@ text-align:center;
 
 <div class="logo">
 
-اوین هوم
+بهنام اطلس
 
-<span>
-خانه‌ای مدرن برای زندگی بهتر
-</span>
+<small>
+مرجع تخصصی لوازم خانگی در مشهد
+</small>
 
 </div>
+
 
 
 <nav>
@@ -502,11 +551,9 @@ text-align:center;
 محصولات
 </a>
 
-
 <a href="#about">
 درباره ما
 </a>
-
 
 <a href="#contact">
 تماس
@@ -516,8 +563,11 @@ text-align:center;
 </nav>
 
 
-<a class="header-btn" href="tel:09154278149">
+
+<a class="call-btn" href="tel:09154278149">
+
 تماس سریع
+
 </a>
 
 
@@ -528,7 +578,10 @@ text-align:center;
 
 
 
+
+
 <section class="hero">
+
 
 
 <div class="hero-text">
@@ -536,57 +589,64 @@ text-align:center;
 
 <h1>
 
-تجهیز خانه شما
-<br>
+خانه‌ای زیباتر
 
-با بهترین انتخاب‌های
+با انتخاب‌های
+
 <span>
-لوازم خانگی
+هوشمندانه
 </span>
 
 </h1>
 
 
+
 <p>
 
-اوین هوم؛ فروشگاه تخصصی لوازم خانگی در مشهد
-با ارائه محصولات با کیفیت، مشاوره تخصصی و تجربه خرید مطمئن.
+فروشگاه لوازم خانگی بهنام اطلس،
+ارائه‌دهنده انواع لوازم خانگی با کیفیت،
+مشاوره تخصصی و خرید مطمئن برای خانواده‌های ایرانی.
 
 </p>
 
 
 
-<div class="hero-buttons">
+<div class="buttons">
 
 
 <a href="#products">
+
 مشاهده محصولات
+
 </a>
 
 
-<a class="second" href="tel:09154278149">
+<a class="light" href="tel:09154278149">
+
 تماس با فروشگاه
+
 </a>
 
 
 </div>
 
 
+
 </div>
 
 
 
 
 
-<div class="hero-image">
+<div class="hero-img">
 
 
 <img src="store.jpg">
 
 
-<div class="tag">
+<div class="store-tag">
 
-⭐ فروشگاه معتبر لوازم خانگی
+⭐ فروشگاه بهنام اطلس
 
 </div>
 
@@ -603,11 +663,14 @@ text-align:center;
 
 
 
+
 <section>
 
 
 <h2 class="title">
-دسته بندی محصولات
+
+دسته‌بندی محصولات
+
 </h2>
 
 
@@ -615,7 +678,7 @@ text-align:center;
 <div class="categories">
 
 
-<div class="category">
+<div class="card">
 
 <div class="icon">
 ❄️
@@ -626,64 +689,74 @@ text-align:center;
 </h3>
 
 <p>
-یخچال، کولر و تجهیزات مدرن
+یخچال و تجهیزات خنک‌کننده
 </p>
 
 </div>
 
 
 
-<div class="category">
+
+<div class="card">
 
 <div class="icon">
 🍳
 </div>
 
 <h3>
-آشپزخانه
+لوازم آشپزخانه
 </h3>
 
 <p>
-اجاق، ماشین لباسشویی و لوازم کاربردی
+تجهیزات مدرن آشپزی
 </p>
 
 </div>
 
 
 
-<div class="category">
+
+
+<div class="card">
 
 <div class="icon">
 📺
 </div>
+
 
 <h3>
 صوتی تصویری
 </h3>
 
 <p>
-تلویزیون و سیستم‌های سرگرمی
+تلویزیون و سرگرمی
 </p>
 
 </div>
 
 
 
-<div class="category">
+
+
+<div class="card">
 
 <div class="icon">
 🏠
 </div>
 
+
 <h3>
 جهیزیه منزل
 </h3>
 
+
 <p>
-همه نیازهای خانه جدید
+کامل برای شروع زندگی
 </p>
 
+
 </div>
+
 
 
 </div>
@@ -703,27 +776,30 @@ text-align:center;
 
 
 <h2 class="title">
-محصولات ویژه اوین هوم
+
+محصولات ویژه
+
 </h2>
 
 
+<div class="product-grid">
 
-<div class="product-box">
 
 
 <div class="product">
 
-<div class="product-demo">
+<div class="fake-img">
 یخچال فریزر
 </div>
 
 <h3>
-برندهای معتبر
+نسل جدید یخچال‌ها
 </h3>
 
 <p>
-کیفیت بالا و مصرف انرژی مناسب
+طراحی زیبا، مصرف بهینه
 </p>
+
 
 </div>
 
@@ -732,39 +808,45 @@ text-align:center;
 
 <div class="product">
 
-<div class="product-demo">
+<div class="fake-img">
 ماشین لباسشویی
 </div>
+
 
 <h3>
 شستشوی هوشمند
 </h3>
 
 <p>
-قدرت بیشتر، مصرف کمتر
+قدرت بالا و کیفیت عالی
 </p>
 
-</div>
 
+</div>
 
 
 
 
 <div class="product">
 
-<div class="product-demo">
+
+<div class="fake-img">
 تلویزیون
 </div>
 
+
 <h3>
-تجربه سرگرمی جدید
+تجربه سرگرمی مدرن
 </h3>
 
+
 <p>
-تصویر شفاف و امکانات مدرن
+تصویر شفاف و امکانات جدید
 </p>
 
+
 </div>
+
 
 
 
@@ -772,6 +854,8 @@ text-align:center;
 
 
 </section>
+
+
 
 
 
@@ -783,26 +867,27 @@ text-align:center;
 
 
 <h2 class="title">
-چرا اوین هوم؟
+
+چرا بهنام اطلس؟
+
 </h2>
 
 
+<div class="features">
 
-<div class="advantages">
 
-
-<div class="adv">
+<div class="feature">
 
 <h2>
 ✔
 </h2>
 
 <h3>
-ضمانت کیفیت
+اعتماد مشتریان
 </h3>
 
 <p>
-انتخاب محصولات معتبر برای مشتریان
+سال‌ها تجربه در حوزه لوازم خانگی
 </p>
 
 </div>
@@ -810,42 +895,44 @@ text-align:center;
 
 
 
-<div class="adv">
+<div class="feature">
 
 <h2>
 🚚
 </h2>
 
 <h3>
-ارسال سریع
+خدمات سریع
 </h3>
 
 <p>
-خدمات مناسب برای مشتریان مشهد
+ارسال و پشتیبانی مناسب
 </p>
+
 
 </div>
 
 
 
 
+<div class="feature">
 
-<div class="adv">
 
 <h2>
 🤝
 </h2>
 
 <h3>
-مشاوره تخصصی
+مشاوره خرید
 </h3>
 
+
 <p>
-کمک برای بهترین انتخاب
+انتخاب بهترین محصول متناسب با نیاز شما
 </p>
 
-</div>
 
+</div>
 
 
 </div>
@@ -859,7 +946,9 @@ text-align:center;
 
 
 
-<div class="cta">
+
+
+<div class="banner">
 
 
 <div>
@@ -869,15 +958,18 @@ text-align:center;
 </h2>
 
 <p>
-برای دریافت مشاوره با ما تماس بگیرید
+برای خرید بهتر با ما مشورت کنید
 </p>
+
 
 </div>
 
 
 
 <a href="tel:09154278149">
-تماس با اوین هوم
+
+تماس با بهنام اطلس
+
 </a>
 
 
@@ -895,19 +987,25 @@ text-align:center;
 
 
 <h2 class="title">
+
 ارتباط با فروشگاه
+
 </h2>
+
 
 
 <p>
 
-📍 خراسان رضوی، مشهد، خیابان کوشش،
-<br>
+📍 استان خراسان رضوی،
+مشهد،
+خیابان کوشش،
 نبش کوچه کوشش ۳۹،
 بازار بزرگ اطلس،
-ورودی B، واحد ۲۰۱۵
+ورودی بی،
+واحد ۲۰۱۵
 
 </p>
+
 
 
 <p>
@@ -925,8 +1023,8 @@ text-align:center;
 </button>
 
 
-
 </section>
+
 
 
 
@@ -935,7 +1033,7 @@ text-align:center;
 
 <footer>
 
-© 2026 اوین هوم | فروشگاه تخصصی لوازم خانگی
+© 2026 فروشگاه لوازم خانگی بهنام اطلس
 
 </footer>
 
@@ -951,36 +1049,6 @@ function callShop(){
 window.location.href="tel:09154278149";
 
 }
-
-
-
-window.addEventListener("scroll",function(){
-
-document.querySelectorAll(".category,.product,.adv")
-.forEach(item=>{
-
-if(item.getBoundingClientRect().top < window.innerHeight-100){
-
-item.style.opacity="1";
-item.style.transform="translateY(0)";
-
-}
-
-});
-
-
-});
-
-
-
-document.querySelectorAll(".category,.product,.adv")
-.forEach(item=>{
-
-item.style.opacity="0";
-item.style.transform="translateY(40px)";
-item.style.transition="1s";
-
-});
 
 
 
