@@ -1,0 +1,992 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>اوین هوم | فروشگاه لوازم خانگی</title>
+
+
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Vazirmatn;
+}
+
+
+body{
+
+background:#faf7f1;
+color:#222;
+}
+
+
+html{
+scroll-behavior:smooth;
+}
+
+
+header{
+
+position:sticky;
+top:0;
+z-index:100;
+background:white;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 8%;
+box-shadow:0 5px 20px #0001;
+
+}
+
+
+.logo{
+
+font-size:32px;
+font-weight:900;
+color:#8b5a2b;
+
+}
+
+
+.logo span{
+
+display:block;
+font-size:12px;
+color:#777;
+font-weight:400;
+
+}
+
+
+nav a{
+
+text-decoration:none;
+color:#333;
+margin:0 15px;
+font-weight:600;
+
+}
+
+
+.header-btn{
+
+background:#8b5a2b;
+color:white;
+padding:12px 25px;
+border-radius:30px;
+text-decoration:none;
+
+}
+
+
+
+
+/* HERO */
+
+
+.hero{
+
+min-height:90vh;
+display:flex;
+align-items:center;
+gap:50px;
+padding:70px 8%;
+
+}
+
+
+.hero-text{
+
+flex:1;
+
+}
+
+
+.hero-text h1{
+
+font-size:55px;
+line-height:1.5;
+
+}
+
+
+.hero-text h1 span{
+
+color:#b87b42;
+
+}
+
+
+.hero-text p{
+
+font-size:18px;
+line-height:2;
+margin:25px 0;
+color:#555;
+
+}
+
+
+.hero-buttons a{
+
+display:inline-block;
+padding:15px 30px;
+border-radius:30px;
+background:#8b5a2b;
+color:white;
+text-decoration:none;
+margin-left:10px;
+
+}
+
+
+.hero-buttons .second{
+
+background:white;
+color:#8b5a2b;
+border:2px solid #8b5a2b;
+
+}
+
+
+
+.hero-image{
+
+flex:1;
+position:relative;
+
+}
+
+
+.hero-image img{
+
+width:100%;
+height:500px;
+object-fit:cover;
+border-radius:35px;
+box-shadow:0 20px 50px #0003;
+
+}
+
+
+.tag{
+
+position:absolute;
+bottom:25px;
+right:25px;
+background:white;
+padding:18px 25px;
+border-radius:20px;
+box-shadow:0 10px 30px #0002;
+font-weight:bold;
+
+}
+
+
+
+
+
+
+
+section{
+
+padding:80px 8%;
+
+}
+
+
+.title{
+
+text-align:center;
+font-size:38px;
+margin-bottom:50px;
+
+}
+
+
+
+/* categories */
+
+
+.categories{
+
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:25px;
+
+}
+
+
+.category{
+
+background:white;
+padding:35px 20px;
+border-radius:25px;
+text-align:center;
+box-shadow:0 10px 30px #0001;
+transition:.3s;
+
+}
+
+
+.category:hover{
+
+transform:translateY(-10px);
+
+}
+
+
+.icon{
+
+font-size:45px;
+margin-bottom:20px;
+
+}
+
+
+
+
+
+/* products */
+
+
+.products{
+
+background:#fff;
+
+}
+
+
+
+.product-box{
+
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:30px;
+
+}
+
+
+.product{
+
+background:#faf7f1;
+padding:25px;
+border-radius:25px;
+text-align:center;
+
+}
+
+
+.product-demo{
+
+height:180px;
+border-radius:20px;
+background:
+linear-gradient(135deg,#eee,#d8c5ae);
+
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:28px;
+font-weight:bold;
+color:#765;
+
+margin-bottom:20px;
+
+}
+
+
+
+
+
+
+/* advantage */
+
+
+.advantages{
+
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:30px;
+
+}
+
+
+.adv{
+
+background:white;
+padding:35px;
+border-radius:25px;
+text-align:center;
+box-shadow:0 10px 30px #0001;
+
+}
+
+
+
+
+
+
+/* CTA */
+
+
+.cta{
+
+margin:0 8%;
+background:#8b5a2b;
+color:white;
+border-radius:35px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:50px;
+
+}
+
+
+.cta a{
+
+background:white;
+color:#8b5a2b;
+padding:15px 30px;
+border-radius:30px;
+text-decoration:none;
+
+}
+
+
+
+
+
+
+
+.contact{
+
+text-align:center;
+
+}
+
+
+.contact p{
+
+line-height:2.3;
+font-size:18px;
+
+}
+
+
+
+.contact button{
+
+margin-top:25px;
+background:#8b5a2b;
+color:white;
+border:none;
+padding:15px 40px;
+border-radius:30px;
+cursor:pointer;
+font-size:17px;
+
+}
+
+
+
+footer{
+
+background:#222;
+color:white;
+padding:30px;
+text-align:center;
+
+}
+
+
+
+
+
+
+@media(max-width:900px){
+
+
+header{
+
+flex-direction:column;
+gap:20px;
+
+}
+
+
+nav{
+
+display:none;
+
+}
+
+
+
+.hero{
+
+flex-direction:column;
+
+}
+
+
+.hero-text h1{
+
+font-size:35px;
+
+}
+
+
+
+.categories,
+.product-box,
+.advantages{
+
+grid-template-columns:1fr;
+
+}
+
+
+.cta{
+
+flex-direction:column;
+gap:30px;
+text-align:center;
+
+}
+
+}
+
+</style>
+
+
+</head>
+
+
+<body>
+
+
+
+<header>
+
+
+<div class="logo">
+
+اوین هوم
+
+<span>
+خانه‌ای مدرن برای زندگی بهتر
+</span>
+
+</div>
+
+
+<nav>
+
+<a href="#">
+خانه
+</a>
+
+<a href="#products">
+محصولات
+</a>
+
+
+<a href="#about">
+درباره ما
+</a>
+
+
+<a href="#contact">
+تماس
+</a>
+
+
+</nav>
+
+
+<a class="header-btn" href="tel:09154278149">
+تماس سریع
+</a>
+
+
+</header>
+
+
+
+
+
+
+<section class="hero">
+
+
+<div class="hero-text">
+
+
+<h1>
+
+تجهیز خانه شما
+<br>
+
+با بهترین انتخاب‌های
+<span>
+لوازم خانگی
+</span>
+
+</h1>
+
+
+<p>
+
+اوین هوم؛ فروشگاه تخصصی لوازم خانگی در مشهد
+با ارائه محصولات با کیفیت، مشاوره تخصصی و تجربه خرید مطمئن.
+
+</p>
+
+
+
+<div class="hero-buttons">
+
+
+<a href="#products">
+مشاهده محصولات
+</a>
+
+
+<a class="second" href="tel:09154278149">
+تماس با فروشگاه
+</a>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+<div class="hero-image">
+
+
+<img src="store.jpg">
+
+
+<div class="tag">
+
+⭐ فروشگاه معتبر لوازم خانگی
+
+</div>
+
+
+</div>
+
+
+
+</section>
+
+
+
+
+
+
+
+<section>
+
+
+<h2 class="title">
+دسته بندی محصولات
+</h2>
+
+
+
+<div class="categories">
+
+
+<div class="category">
+
+<div class="icon">
+❄️
+</div>
+
+<h3>
+لوازم سرمایشی
+</h3>
+
+<p>
+یخچال، کولر و تجهیزات مدرن
+</p>
+
+</div>
+
+
+
+<div class="category">
+
+<div class="icon">
+🍳
+</div>
+
+<h3>
+آشپزخانه
+</h3>
+
+<p>
+اجاق، ماشین لباسشویی و لوازم کاربردی
+</p>
+
+</div>
+
+
+
+<div class="category">
+
+<div class="icon">
+📺
+</div>
+
+<h3>
+صوتی تصویری
+</h3>
+
+<p>
+تلویزیون و سیستم‌های سرگرمی
+</p>
+
+</div>
+
+
+
+<div class="category">
+
+<div class="icon">
+🏠
+</div>
+
+<h3>
+جهیزیه منزل
+</h3>
+
+<p>
+همه نیازهای خانه جدید
+</p>
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<section id="products" class="products">
+
+
+<h2 class="title">
+محصولات ویژه اوین هوم
+</h2>
+
+
+
+<div class="product-box">
+
+
+<div class="product">
+
+<div class="product-demo">
+یخچال فریزر
+</div>
+
+<h3>
+برندهای معتبر
+</h3>
+
+<p>
+کیفیت بالا و مصرف انرژی مناسب
+</p>
+
+</div>
+
+
+
+
+<div class="product">
+
+<div class="product-demo">
+ماشین لباسشویی
+</div>
+
+<h3>
+شستشوی هوشمند
+</h3>
+
+<p>
+قدرت بیشتر، مصرف کمتر
+</p>
+
+</div>
+
+
+
+
+
+<div class="product">
+
+<div class="product-demo">
+تلویزیون
+</div>
+
+<h3>
+تجربه سرگرمی جدید
+</h3>
+
+<p>
+تصویر شفاف و امکانات مدرن
+</p>
+
+</div>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+<section id="about">
+
+
+<h2 class="title">
+چرا اوین هوم؟
+</h2>
+
+
+
+<div class="advantages">
+
+
+<div class="adv">
+
+<h2>
+✔
+</h2>
+
+<h3>
+ضمانت کیفیت
+</h3>
+
+<p>
+انتخاب محصولات معتبر برای مشتریان
+</p>
+
+</div>
+
+
+
+
+<div class="adv">
+
+<h2>
+🚚
+</h2>
+
+<h3>
+ارسال سریع
+</h3>
+
+<p>
+خدمات مناسب برای مشتریان مشهد
+</p>
+
+</div>
+
+
+
+
+
+<div class="adv">
+
+<h2>
+🤝
+</h2>
+
+<h3>
+مشاوره تخصصی
+</h3>
+
+<p>
+کمک برای بهترین انتخاب
+</p>
+
+</div>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+<div class="cta">
+
+
+<div>
+
+<h2>
+آماده تجهیز خانه شما هستیم
+</h2>
+
+<p>
+برای دریافت مشاوره با ما تماس بگیرید
+</p>
+
+</div>
+
+
+
+<a href="tel:09154278149">
+تماس با اوین هوم
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<section id="contact" class="contact">
+
+
+<h2 class="title">
+ارتباط با فروشگاه
+</h2>
+
+
+<p>
+
+📍 خراسان رضوی، مشهد، خیابان کوشش،
+<br>
+نبش کوچه کوشش ۳۹،
+بازار بزرگ اطلس،
+ورودی B، واحد ۲۰۱۵
+
+</p>
+
+
+<p>
+
+☎ 09154278149
+
+</p>
+
+
+
+<button onclick="callShop()">
+
+تماس مستقیم
+
+</button>
+
+
+
+</section>
+
+
+
+
+
+
+<footer>
+
+© 2026 اوین هوم | فروشگاه تخصصی لوازم خانگی
+
+</footer>
+
+
+
+
+
+<script>
+
+
+function callShop(){
+
+window.location.href="tel:09154278149";
+
+}
+
+
+
+window.addEventListener("scroll",function(){
+
+document.querySelectorAll(".category,.product,.adv")
+.forEach(item=>{
+
+if(item.getBoundingClientRect().top < window.innerHeight-100){
+
+item.style.opacity="1";
+item.style.transform="translateY(0)";
+
+}
+
+});
+
+
+});
+
+
+
+document.querySelectorAll(".category,.product,.adv")
+.forEach(item=>{
+
+item.style.opacity="0";
+item.style.transform="translateY(40px)";
+item.style.transition="1s";
+
+});
+
+
+
+</script>
+
+
+</body>
+
+</html>
